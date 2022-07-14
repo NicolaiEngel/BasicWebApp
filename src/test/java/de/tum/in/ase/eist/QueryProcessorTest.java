@@ -32,10 +32,10 @@ class QueryProcessorTest {
 
 	@Test
 	void myQueryTest() {
-		String searchPhrase = "search";
+		String searchPhrase = "name";
 		String actual = queryProcessor.process(searchPhrase);
-		if (!actual.contains("playwright")) {
-			fail("The QueryProcessor does not know about Shakespeare.");
+		if (!actual.contains("Nicolai")) {
+			fail("The QueryProcessor does not know about Nicolai.");
 		}
 	}
 
