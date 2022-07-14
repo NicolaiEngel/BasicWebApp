@@ -30,4 +30,13 @@ class QueryProcessorTest {
 		}
 	}
 
+	@Test
+	void myQueryTest() {
+		String searchPhrase = "search";
+		String actual = queryProcessor.process(searchPhrase);
+		if (!actual.contains("playwright")) {
+			fail("The QueryProcessor does not know about Shakespeare.");
+		}
+	}
+
 }
